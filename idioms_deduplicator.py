@@ -31,7 +31,7 @@ for row in data:
 	else:
 		# Add the idiom to the dictionary
 		idioms_dict[idiom_key] = [idiom, definition]
-print(idioms_dict)
+
 # Write the filtered data to the output CSV file
 with open(output_csv_file, mode='w', newline='') as file:
 	writer = csv.writer(file, quoting=csv.QUOTE_ALL)
